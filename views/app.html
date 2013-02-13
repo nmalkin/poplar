@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>{{ name }}</title>
+        <meta name="description" content="{{ description }}" />
+        <link rel="shortcut icon" href="{{ icon }}" />
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+                overflow: hidden;
+            }
+            /* hat tip: http://stackoverflow.com/a/12973913 */
+            #container {
+                position:absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                top: 0;
+                height: expression(document.body.clientHeight);
+            }
+            #frame {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                height: 100%;
+                border: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <iframe src="{{ url }}" id="frame"></iframe>
+        </div>
+    </body>
+</html>

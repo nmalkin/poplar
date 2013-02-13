@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Poplar — Appify! — Turn Any Webpage into a Stand-alone Desktop Application</title>
+        <link rel="shortcut icon" href="poplar.svg" />
+        <link rel="stylesheet" href="bootstrap.css" />
+        <style>
+            #main {
+                margin: 15px 0px;
+                padding: 15px;
+                border: 1px solid rgb(220, 220, 220);
+                border-radius: 5px;
+            }
+            #preview {
+                max-height: 128px;
+                max-width: 128px;
+                float: right;
+                margin: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="headline">
+                <h1>Poplar
+                    <small>Turn Any Webpage into a Stand-alone Desktop Application</small>
+                </h1>
+            </div>
+
+            <div id="main"><form>
+                <p>Enter the URL of the page you want app-ified:</p>
+                <input type="text" id="url" placeholder="http://www.example.com/" class="span11" required="required" />
+
+                <p>A name for your application:</p>
+                <input type="text" id="name" placeholder="My Great App" required="required" />
+
+                <div id="preview" class="thumbnail">
+                    <img src="" alt="Default Icon" />
+                    <div class="caption" style="text-align: center;">Icon Preview</div>
+                </div>
+
+                <p>What should the icon for your application be? Enter the URL of the image.</p>
+                <input type="text" id="icon" placeholder="http://www.example.com/image.png" class="span6" />
+
+                <p style="font-size:17.5px">
+                Ready, Set,
+                <input type="submit" id="submit" value="Appify!" class="btn btn-primary btn-large" />
+                </p>
+            </form></div>
+
+            <div class="media">
+                <a href="//affiliates.mozilla.org/link/banner/31528" class="pull-left" style="margin-top:5px;"><img src="firefox.png" alt="Download Firefox" /></a>
+                <p>
+                    Poplar turns webpages into <a href="https://marketplace.firefox.com/developers/">Mozilla Apps</a>.
+                    For the installation to work, you need to run this page in a recent version of the <a href="//affiliates.mozilla.org/link/banner/31528">Firefox web browser</a>.
+                </p>
+            </div>
+            <p><small>
+                Poplar is <a href="https://github.com/nmalkin/">open-source software</a>.
+                The project logo was designed by <a href="http://thenounproject.com/walkingfearless">João Carlos Cabanita Miranda</a> from <a href="http://thenounproject.com/noun/tree/">The Noun Project</a>.
+            </small></p>
+        </div>
+    </body>
+    <script src="zepto.js"></script>
+    <script src="poplar.js"></script>
+</html>

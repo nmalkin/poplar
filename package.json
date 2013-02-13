@@ -1,0 +1,17 @@
+{
+    "name": "poplar",
+    "version": "0.1.0",
+    "author": "Nathan Malkin",
+    "engines": {
+        "node": "0.8.x",
+        "npm": "1.1.x"
+    },
+    "dependencies": {
+        "consolidate": "0.7.x",
+        "express": "3.x",
+        "hogan.js": "2.x",
+        "node-uuid": "1.x",
+        "redis": "0.8.x",
+        "redis-url": "0.1.x"
+    }
+}
